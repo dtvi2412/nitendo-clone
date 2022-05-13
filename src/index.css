@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: rgb(72, 72, 72);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Arrows from slick */
+.arrowRight {
+  right: 0px !important;
+  width: 80px !important;
+  height: 100% !important;
+  text-align: center !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 4px !important;
+  z-index: 1;
+}
+.arrowRight:hover {
+  opacity: 1 !important;
+}
+.slick-next:before {
+  font-size: 50px !important;
+}
+.arrowLeft {
+  left: 0px !important;
+  width: 80px !important;
+  height: 100% !important;
+  text-align: center !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 4px !important;
+  z-index: 1;
+}
+.arrowLeft:hover {
+  opacity: 1 !important;
+}
+.slick-prev:before {
+  font-size: 50px !important;
+  z-index: 10;
+}
+/* End Arrow Slick */
+
+/* Gap In React Slick */
+.slick-slide > div {
+  margin: 0 20px;
+}
+.slick-list {
+  margin: 0 -20px;
+}
+/* End Gap React Slick */
+
+@layer components {
+  /* Card Futured */
+  .cardFutured {
+    @apply relative flex flex-col min-h-[280px] self-stretch cursor-pointer my-10  border border-[#dedede] rounded-md;
+    /* h-[calc(100vh/2.5)] */
+    /* align-items: stretch; */
+    /* mr-[20px] */
+  }
+  .cardFutured__title {
+    @apply duration-500 px-4 pt-4 pb-2 font-[700] justify-self-start;
+  }
+  .cardFutured__wrapper--img {
+    @apply duration-500 relative left-0 top-0 right-0 border border-[#dedede] rounded-md overflow-hidden;
+  }
+  .cardFutured:hover .cardFutured__title {
+    @apply text-secondary;
+  }
+  .cardFutured:hover .cardFutured__wrapper--img {
+    @apply -top-5;
+  }
+  /* End Card Futured */
+
+  /* Card Digitals */
+  .cardDigital {
+    @apply relative flex flex-col  min-h-[360px] self-stretch cursor-pointer my-10 border border-gray-300 rounded-md;
+  }
+  .cardDigital__wrapperImg {
+    @apply duration-500 relative left-0 top-0 right-0 border border-[#dedede] rounded-md overflow-hidden;
+  }
+  /* group-hover:-top-[20px] */
+  .cardDigital__title {
+    @apply duration-300 p-4 text-base font-bold;
+  }
+
+  .cardDigital:hover .cardDigital__wrapperImg {
+    @apply -top-5;
+  }
+  .cardDigital:hover .cardDigital__title {
+    @apply text-secondary;
+  }
+
+  /* group-hover:text-secondary */
+  /* End Card Digitals */
+
+  /* Heart Icon */
+  .heartIcon {
+    @apply relative text-2xl text-secondary w-8 h-8 flex items-center justify-center;
+  }
+  .heartIcon__light {
+    @apply hidden;
+  }
+  .heartIcon:hover .heartIcon__light {
+    @apply block;
+  }
+  /* End Heart Icon */
+
+  /* Header Tablet */
+  .headerTabletTop {
+    @apply relative h-16 w-full flex items-center justify-center border-b border-[rgb(218,218,218)] bg-white;
+  }
+  .headerTabletTop--title {
+    @apply text-center text-[1.3125rem] font-bold;
+  }
+  .headerTabletTop--closeIcon {
+    @apply absolute top-1/2 -translate-y-1/2 right-4 text-[rgb(200,200,200)] text-[34px] cursor-pointer hover:text-gray-700 duration-300;
+  }
+  .headerTabletTop--prevIcon {
+    @apply absolute top-1/2 -translate-y-1/2 left-4 cursor-pointer;
+  }
+  .headerTabletNavlist {
+    @apply bg-[#efefef] h-[calc(60vh-4rem)] overflow-y-scroll pb-12;
+  }
+  .headerTabletNavlist__top {
+    @apply bg-white;
+  }
+  .headerTabletNavlistTopItem {
+    @apply h-[60px] flex items-center justify-between px-6 cursor-pointer hover:text-secondary duration-300 border-b border-[#dadada];
+  }
+  .headerTabletNavlistTopItemHoverNoColor {
+    @apply h-[60px] flex items-center justify-between px-6 cursor-pointer border-b border-[#dadada];
+  }
+  /* End Header Tablet */
+}
+/* group-hover:-top-5 */
+/* group-hover:text-secondary */
+
+.shadow-custom {
+  box-shadow: rgb(60 64 89 / 15%) 0px 4px 16px 0px;
+}
