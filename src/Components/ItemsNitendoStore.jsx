@@ -12,19 +12,15 @@ const ItemsNitendoStore = () => {
           <h3>Games</h3>
         </div>
         <div className="flex flex-col items-start text-[0.875rem] duration-300 ">
-          <Link
-            to="/store/games"
-            className="hover:text-secondary"
-            href="#Nitendo"
-          >
+          <Link to="/store/games" className="hover:text-secondary">
             Nitendo Switch Game
           </Link>
-          <a className="hover:text-secondary" href="#Nitendo">
+          <Link to="/store/games" className="hover:text-secondary">
             New Releases
-          </a>
-          <a className="hover:text-secondary" href="#Nitendo">
+          </Link>
+          <Link to="/store/games" className="hover:text-secondary">
             Sales & deals
-          </a>
+          </Link>
         </div>
       </div>
       {/* Item */}
@@ -34,18 +30,18 @@ const ItemsNitendoStore = () => {
           <h3>Hardware</h3>
         </div>
         <div className="flex flex-col items-start text-[0.875rem] duration-300 ">
-          <a className="hover:text-secondary" href="#Nitendo">
+          <Link to="/store/games" className="hover:text-secondary">
             Nitendo Switch systems
-          </a>
-          <a className="hover:text-secondary" href="#Nitendo">
+          </Link>
+          <Link to="/store/games" className="hover:text-secondary">
             Joy-Con & controllers
-          </a>
-          <a className="hover:text-secondary" href="#Nitendo">
+          </Link>
+          <Link to="/store/games" className="hover:text-secondary">
             Cases & more
-          </a>
-          <a className="hover:text-secondary" href="#Nitendo">
+          </Link>
+          <Link to="/store/games" className="hover:text-secondary">
             Replacement parts
-          </a>
+          </Link>
         </div>
       </div>
       {/* Item */}
@@ -55,18 +51,18 @@ const ItemsNitendoStore = () => {
           <h3>Merchanedise</h3>
         </div>
         <div className="flex flex-col items-start text-[0.875rem] duration-300 ">
-          <a className="hover:text-secondary" href="#Nitendo">
+          <Link to="/store/games" className="hover:text-secondary">
             Apparel & accessories
-          </a>
-          <a className="hover:text-secondary" href="#Nitendo">
+          </Link>
+          <Link to="/store/games" className="hover:text-secondary">
             Home & office
-          </a>
-          <a className="hover:text-secondary" href="#Nitendo">
+          </Link>
+          <Link to="/store/games" className="hover:text-secondary">
             Plush
-          </a>
-          <a className="hover:text-secondary" href="#Nitendo">
+          </Link>
+          <Link to="/store/games" className="hover:text-secondary">
             Toys
-          </a>
+          </Link>
         </div>
       </div>
       {/* Item */}
@@ -76,15 +72,15 @@ const ItemsNitendoStore = () => {
           <h3>Store Exclusives</h3>
         </div>
         <div className="flex flex-col items-start text-[0.875rem] duration-300 ">
-          <a className="hover:text-secondary" href="#Nitendo">
+          <Link to="/store/games" className="hover:text-secondary">
             Exclusive products
-          </a>
-          <a className="hover:text-secondary" href="#Nitendo">
+          </Link>
+          <Link to="/store/games" className="hover:text-secondary">
             My nitendo rewards
-          </a>
-          <a className="hover:text-secondary" href="#Nitendo">
+          </Link>
+          <Link to="/store/games" className="hover:text-secondary">
             Nitendo Switch Online offers
-          </a>
+          </Link>
         </div>
       </div>
       {/* Item */}
@@ -94,18 +90,18 @@ const ItemsNitendoStore = () => {
           <h3>Charactor</h3>
         </div>
         <div className="flex flex-col items-start text-[0.875rem] duration-300 ">
-          <a className="hover:text-secondary" href="#Nitendo">
+          <Link to="/store/games" className="hover:text-secondary">
             Animal Crossing
-          </a>
-          <a className="hover:text-secondary" href="#Nitendo">
+          </Link>
+          <Link to="/store/games" className="hover:text-secondary">
             Kirby
-          </a>
-          <a className="hover:text-secondary" href="#Nitendo">
+          </Link>
+          <Link to="/store/games" className="hover:text-secondary">
             Mario
-          </a>
-          <a className="hover:text-secondary" href="#Nitendo">
+          </Link>
+          <Link to="/store/games" className="hover:text-secondary">
             The Legend of Zelda
-          </a>
+          </Link>
         </div>
       </div>
       {/* Item */}
